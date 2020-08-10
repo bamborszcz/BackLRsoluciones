@@ -28,7 +28,7 @@ public class CategoriaService {
     }
 
     // (LOGICA DEL POST)
-    public ResponseEntity<?> saveCategoria(CategoriaRequest categoriaRequest){// va a recibir el ItemRequest
+    public  ResponseEntity<?> saveCategoria(CategoriaRequest categoriaRequest){// va a recibir el ItemRequest
         ResponseEntity<?> responseEntity;
         Categoria categoria;
                   categoria = getCategoriaRepository().findByCategoria(categoriaRequest.getCategoria());
@@ -43,7 +43,7 @@ public class CategoriaService {
                 responseEntity = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
         } else {
-           responseEntity = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+               responseEntity = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
         return responseEntity;
