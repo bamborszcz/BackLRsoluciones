@@ -42,7 +42,7 @@ class CategoriaServiceTest {
     @Test
     void getAllCategorias() {
         responseEntity = categoriaService.getAllCategorias();
-        assertEquals(404, responseEntity.getStatusCodeValue(), "no funciona");
+        assertEquals(404, responseEntity.getStatusCodeValue(), "no funciona mamerto");
     }
 
     @Test
