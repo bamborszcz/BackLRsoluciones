@@ -24,6 +24,7 @@ public class CategoriaResource {
     }
 
     //(POST)
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping(produces = "application/json", consumes = "application/json")
     public @ResponseBody ResponseEntity<?> saveCategoria(@RequestBody @Valid CategoriaRequest categoriaRequest){// va a recibir el ItemRequest
                 // ResponseEntity responseEntity = null;

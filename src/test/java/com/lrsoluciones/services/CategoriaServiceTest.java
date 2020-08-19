@@ -42,11 +42,15 @@ class CategoriaServiceTest {
     @Test
     void getAllCategorias() {
         responseEntity = categoriaService.getAllCategorias();
+        //when().thenReturn();
         assertEquals(404, responseEntity.getStatusCodeValue(), "no funciona mamerto");
     }
 
     @Test
     void getCategoriaByCategoria() {
+       responseEntity = categoriaService.getCategoriaByCategoria("jabon");
+        assertEquals(404, responseEntity.getStatusCodeValue(), "no funciona mamerto");
+
     }
 
     @Test

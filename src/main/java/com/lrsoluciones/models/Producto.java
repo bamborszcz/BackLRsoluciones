@@ -14,7 +14,7 @@ public class Producto implements Serializable {
     @Column(name = "id")
     private Long id;
     @ManyToOne()
-    @JoinColumn(name = "categoria"/*,referencedColumnName = "categoria"*/)
+    @JoinColumn(name = "categoria",referencedColumnName = "categoria")
     private Categoria categoria;
     @Column(name = "descripcion")
     private String descripcion;

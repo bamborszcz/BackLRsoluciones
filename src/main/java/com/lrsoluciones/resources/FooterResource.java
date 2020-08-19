@@ -39,6 +39,7 @@ public class FooterResource {
     }
 
     //(POST)
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping(produces = "application/json", consumes = "application/json")
     public @ResponseBody
     ResponseEntity<?> saveFooter(@RequestBody @Valid FooterRequest footerRequest){
